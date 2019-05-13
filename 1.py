@@ -1,5 +1,6 @@
 # hello world
 import socket
+import threading
 
 class Tcp(object):
     def __init__(self):
@@ -8,3 +9,9 @@ class Tcp(object):
         tcp_client.bind("", 80)
         tcp_client.listen(128)
         self.tcp_client = tcp_client
+    
+    def ss(tcp_cilent):
+        pass
+
+    def start():
+        tcp_thread = threading.Thread(target="self.ss", args=(tcp_client,))
